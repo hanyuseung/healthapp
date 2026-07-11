@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "healthapp-web",
+      "runtimeExecutable": "flutter",
+      "runtimeArgs": ["run", "-d", "web-server", "--web-port=8473"],
+      "port": 8473
+    },
+    {
+      "name": "healthapp-web-release",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8474", "--directory", "build/web"],
+      "port": 8474
+    }
+  ]
+}
